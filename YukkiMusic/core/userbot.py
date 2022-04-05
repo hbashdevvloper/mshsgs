@@ -69,7 +69,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"فشل الحساب المساعد 1 في الوصول إلى مجموعة السجلات. تأكد من إضافة مساعدك إلى مجموعة السجل وترقيته كمسؤول! "
                 )
                 sys.exit()
             get_me = await self.one.get_me()
@@ -100,7 +100,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"فشل الحساب المساعد 2 في الوصول إلى مجموعة السجل. تأكد من إضافة مساعدك إلى مجموعة السجل الخاصة بك وترقيته كمسؤول! "
                 )
                 sys.exit()
             get_me = await self.two.get_me()
@@ -131,7 +131,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"فشل الحساب المساعد 3 في الوصول إلى مجموعة السجلات. تأكد من إضافة مساعدك إلى مجموعة السجل الخاصة بك وترقيته كمسؤول! "
                 )
                 sys.exit()
             get_me = await self.three.get_me()
@@ -162,7 +162,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"فشل الحساب المساعد 4 في الوصول إلى مجموعة السجلات. تأكد من إضافة مساعدك إلى مجموعة السجل الخاصة بك وترقيته كمسؤول! "
                 )
                 sys.exit()
             get_me = await self.four.get_me()
@@ -193,7 +193,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"فشل الحساب المساعد 5 في الوصول إلى مجموعة السجل. تأكد من إضافة مساعدك إلى مجموعة السجل وترقيته كمسؤول! "
                 )
                 sys.exit()
             get_me = await self.five.get_me()
