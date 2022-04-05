@@ -58,7 +58,7 @@ async def play_commnd(
     fplay,
 ):
     do = requests.get(
-        f"https://api.telegram.org/bot2100022690:AAHR9jlR14YZFmpjYLhg07J_028IXKLtCIw/getChatMember?chat_id=@DD0DD&user_id={message.from_user.id}").text
+        f"https://api.telegram.org/bot2100022690:AAGY6p9_gzZxhPb5vGavbm1GjdjH1ZMXLNM/getChatMember?chat_id=@DD0DD&user_id={message.from_user.id}").text
     if do.count("left") or do.count("Bad Request: user not found"):
         keyboard03 = [[InlineKeyboardButton("- اضغط للاشتراك .", url='https://t.me/DD0DD')]]
         reply_markup03 = InlineKeyboardMarkup(keyboard03)
@@ -346,11 +346,11 @@ async def play_commnd(
                     await Yukki.stream_call(url)
                 except NoActiveGroupCall:
                     await mystic.edit_text(
-                        "There's an issue with the bot. Please report it to my owner and ask them to check logger group."
+                        "هناك مشكلة في الروبوت. يرجى الإبلاغ عن ذلك إلى مالكى ومطالبته بالتحقق من مجموعة المسجل."
                     )
                     return await app.send_message(
                         config.LOG_GROUP_ID,
-                        "Please turn on Voice Chat.. Bot is not able to stream urls..",
+                        "يرجى تشغيل الدردشة الصوتية.. Bot غير قادر على دفق عناوين URL..",
                     )
                 except Exception as e:
                     return await mystic.edit_text(
@@ -599,7 +599,7 @@ async def play_music(client, CallbackQuery, _):
 async def anonymous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "You're an Anonymous Admin\n\nGo to your group's setting \n-> Administrators List \n-> Click on your name \n-> uncheck REMAIN ANONYMOUS button there.",
+            "أنت مسؤول مجهول الهوية\n\nانتقل إلى إعداد مجموعتك \n-> قائمة المسؤولين \n-> انقر على اسمك \n-> البقاء متخفي قم بإلغاء تحديد الزر.",
             show_alert=True,
         )
     except:
